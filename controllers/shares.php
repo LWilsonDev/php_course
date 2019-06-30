@@ -1,7 +1,8 @@
 <?php
 class Shares extends Controller {
   protected function Index(){
-    echo 'shares/index wooo';
+    $viewmodel = new ShareModel();
+    $this->ReturnView($viewmodel->Index(), true);
   }
 }
 ?>
