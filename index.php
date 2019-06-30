@@ -3,6 +3,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+//start session
+session_start();
+
 require('config.php');
 require('classes/Bootstrap.php');
 require('classes/Controller.php');
